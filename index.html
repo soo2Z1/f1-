@@ -1,40 +1,99 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="uk">
 <head>
-    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1</title>
     <link rel="stylesheet" href="style.css">
-    <meta name="description" content="Сайт про Формулу 1 з інформацією про команди, пілотів і офіційний магазин фанатського мерчу.">
-<meta name="keywords" content="Формула 1  F1 2025 Пілоти F1 Команди F1 Команди Формули 1 2025 Боліди F1 Пілоти Формули 1 2025">
-<meta name="author" content="ім'я автора">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
+</head>
 <body>
+
 <header>
     <header class="site-header">
-  <div class="logo">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/New_era_F1_logo.png" alt="Логотип" />
-  </div>
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/New_era_F1_logo.png" alt="Логотип" />
+        </div>
+        <nav class="main-nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Product</a>
+            <a href="#">Contact</a>
+            <img src="https://img.icons8.com/pulsar-line/512/FFFFFF/google-translate-new-logo.png" class="lang-switch" alt="UA flag" />
+        </nav>
+    </header>
+</header>
 
-  <nav class="main-nav">
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Product</a>
-    <a href="#">Contact</a>
-  </nav>
-<div class="translate"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e3e3e3"><path d="m476-80 182-480h84L924-80h-84l-43-122H603L560-80h-84ZM160-200l-56-56 202-202q-35-35-63.5-80T190-640h84q20 39 40 68t48 58q33-33 68.5-92.5T484-720H40v-80h280v-80h80v80h280v80H564q-21 72-63 148t-83 116l96 98-30 82-122-125-202 201Zm468-72h144l-72-204-72 204Z"/></svg></div>
-</header>
-</header>
 <main>
-<div class="gallery">
-  <span class="arrow left">&#10094;</span>
-  <img id="gallery-image" src="https://i.bstr.es/highmotor/2018/09/MarinaBay-1-880x495.jpg" alt="Фото">
-  <span class="arrow right">&#10095;</span>
-</div>
+
+    <section class="video-background">
+
+        <iframe id="video-iframe" 
+        src="https://www.youtube.com/embed/iwB0_lview4?autoplay=1&mute=1&loop=1&playlist=iwB0_lview4&controls=0&showinfo=0&modestbranding=1&fs=0&cc_load_policy=0" 
+        frameborder="0" 
+        allow="autoplay; fullscreen" 
+        allowfullscreen>
+</iframe>
+
+        
+        <div class="content">
+            <h1 class="h1_1">FORMULA I</h1>
+            <p class="p_1">is a world championship in open-wheeled circuit racing , which takes place under the auspices of the International Automobile Federation (FIA) . First of all , "formula" is a term that defines a set of rules that are mandatory for all participants in the race.</p>
+        </div>
+    </section>
+    <img class="team_photo" src="https://images.hdqwalls.com/wallpapers/f1-24-formula-one-world-championship-e4.jpg">
+    <p class="team_text">Formula 1 features 10 teams and 20 drivers, each competing at the highest level of motorsport.<br> <br>If you want to learn more about the drivers and teams </p>
+    <button class="custom-btn btn-13">Read More</button>
+
+    <img class="team_store" src="https://f1store.formula1.com/content/ws/all/0e45c8e8-66e1-4293-8327-f409cc8def71__1370X450.png?w=3200">
+    <p class="store_text">Check out our official store for team merchandise, driver apparel, and exclusive fan items.</p>
+    <button class="custom-btn btn-14">Click here and start shopping!</button>
+
+    
 </main>
-<footer></footer>
+
+<footer>
+    <div class="line_in_footer"></div>
+    <div class="box"></div>
+    <div class="line_2"></div>
+    <div class="line_3"></div>
+    <p class="text-in-footer-1"><a href="https://github.com/soo2Z1">Author</a> <br><br><a href="https://www.formula1.com/"> Official F1 site</a></p>
+    <p class="text-in-footer-2"><a href="https://www.f1authentics.com/?srsltid=AfmBOoo-uW347GFFi-cXmXmBnqj-A8JPydy7fOAerHD9Zka0BUqi60Vn">Products</a> <br><br> <a href="https://f1store.formula1.com/en/">F1 Store</a></p>
+    <p class="text-in-footer-3"><a href="https://www.formula1.com/en/teams">Teams in F1</a> <br><br><a href="https://en.wikipedia.org/wiki/Formula_One"> More about F1</a></p>
+
+</footer>
+
+<script src="script.js"></script>
+<script>
+    let isUkrainian = false;
+    
+    document.querySelector(".lang-switch").addEventListener("click", function () {
+      if (!isUkrainian) {
+        document.querySelector('.h1_1').innerText = 'Формула 1';
+        document.querySelector('.p_1').innerText = 'це світовий чемпіонат з кільцевих перегонів на болідах з відкритими колесами під егідою FIA.';
+        document.querySelector('.team_text').innerText = 'У Формулі 1 — 10 команд і 20 пілотів, які змагаються на найвищому рівні.';
+        document.querySelector('.store_text').innerText = 'Завітайте до нашого офіційного магазину за мерчем і товарами для фанатів.';
+        document.querySelector('.btn-13').innerText = 'Дізнатись більше';
+        document.querySelector('.btn-14').innerText = 'Перейти до магазину';
+        isUkrainian = true;
+      } else {
+        document.querySelector('.h1_1').innerText = 'FORMULA I';
+        document.querySelector('.p_1').innerText = 'is a world championship in open-wheeled circuit racing , which takes place under the auspices of the International Automobile Federation (FIA). First of all, "formula" is a term that defines a set of rules that are mandatory for all participants in the race.';
+        document.querySelector('.team_text').innerText = 'Formula 1 features 10 teams and 20 drivers, each competing at the highest level of motorsport. If you want to learn more about the drivers and teams';
+        document.querySelector('.store_text').innerText = 'Check out our official store for team merchandise, driver apparel, and exclusive fan items.';
+        document.querySelector('.btn-13').innerText = 'Read More';
+        document.querySelector('.btn-14').innerText = 'Click here and start shopping!';
+        isUkrainian = false;
+      }
+    });
+    </script>
+    
+    
 </body>
 </html>
 
 
-</html>
 
