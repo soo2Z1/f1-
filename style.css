@@ -148,9 +148,7 @@ p {
     top: 0;
     height: 100%;
   }
-  .btn-13:active {
-    top: 2px;
-  }
+
 
 .team_store{
     margin-top: 80px;
@@ -208,9 +206,6 @@ p {
   .btn-14:hover:after {
     top: 0;
     height: 100%;
-  }
-  .btn-14:active {
-    top: 2px;
   }
 
 .line_in_footer{
